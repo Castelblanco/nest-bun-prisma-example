@@ -1,0 +1,28 @@
+@apiLocal = http://localhost:5000/tasks
+
+###
+GET {{apiLocal}}/get-all?title=task 1&limit=2&offset=1
+
+###
+GET {{apiLocal}}/get-by-id/2
+
+###
+POST {{apiLocal}}/create
+Content-Type: application/json
+
+{
+    "title": "task 1",
+    "description": "alblakslakbv"
+}
+
+###
+PUT {{apiLocal}}/update/4
+Content-Type: application/json
+
+{
+    "title": "task 1.1",
+    "description": ""
+}
+
+###
+DELETE {{apiLocal}}/delete/3

@@ -1,0 +1,4 @@
+@apiLocal = http://localhost:5000
+
+###
+GET {{apiLocal}}
